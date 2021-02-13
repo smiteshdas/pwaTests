@@ -2,8 +2,8 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('fox-store').then((cache) => cache.addAll([
-      '/pwaTests/FirstSWtest/',
-      '/pwaTests/FirstSWtest/index.html',
+      'https://smiteshdas.github.io/pwaTests/FirstSWtest/',
+      'https://smiteshdas.github.io/pwaTests/FirstSWtest/index.html',
 
     ])),
   );
