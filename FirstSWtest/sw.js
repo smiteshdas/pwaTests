@@ -1,10 +1,10 @@
-/* importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-sw.js');
+ importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-sw.js');
 
 workbox.routing.registerRoute(
   ({request}) => request.destination === 'image',
   new workbox.strategies.NetworkFirst()
 );
-*/
+/*
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
@@ -21,3 +21,4 @@ self.addEventListener('fetch', (e) => {
     caches.match(e.request).then((response) => response || fetch(e.request)),
   );
 });
+*/
